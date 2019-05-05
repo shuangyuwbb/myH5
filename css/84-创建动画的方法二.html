@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>84-创建动画的方法二</title>
+<!--
+ animation-fill-mode:;
+ 取值:
+none
+不改变默认行为。
+forwards
+当动画完成后，保持最后一个属性值（在最后一个关键帧中定义）。
+backwards
+在 animation-delay 所指定的一段时间内，在动画显示之前，应用开始属性值（在第一个关键帧中定义）。
+both
+向前和向后填充模式都被应用。
+-->
+    <style>
+        .box1{
+            width: 100px;
+            height: 50px;
+            background-color: red;
+            position: absolute;
+            top: 0;
+            left: 0;
+            animation-name: bb;
+            animation-duration: 10s;
+        }
+        @keyframes bb {
+             0% {
+                 top: 0;
+                 left: 0;
+             }
+             25%{
+                 top: 0;
+                 left: 500px;
+             }
+             50%{
+                 top: 300px;
+                 left: 400px;
+             }
+             75%{
+                 top: 300px;
+                 left: 0;
+             }
+             100%{
+                 top: 0;
+                 left: 0;
+             }
+         }
+
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: #02ff10;
+            margin: 100px auto;
+            animation-name: xx;
+            animation-duration: 8s;
+            animation-fill-mode:backwards;
+        }
+        @keyframes xx {
+            0% {
+                transform: rotate(20deg);
+            }
+            25%{
+                transform: rotate(40deg);
+            }
+            50%{
+                transform: rotate(80deg);
+            }
+            75%{
+                transform: rotate(150deg);
+            }
+            100%{
+                transform: rotate(180deg);
+            }
+
+        }
+    </style>
+</head>
+<body>
+<div class="box1"></div>
+<div class="box2"></div>
+</body>
+</html>

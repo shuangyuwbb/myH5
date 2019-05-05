@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>61-绝对定位</title>
+    <style>
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: #ff1b11;
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: #41ff0f;
+            position: absolute;
+            bottom: 220px;
+        }
+        .box3{
+            width: 100px;
+            height: 100px;
+            background-color: #0629ff;
+            position: absolute;
+            right: 0;
+            top: 0;
+
+        }
+
+    </style>
+</head>
+<!--
+绝对定位是相对于body的
+注意
+1、绝对定位是脱离标准流的
+2、绝对定位的元素不区分行内元素/块级元素/行内块级元素
+-->
+<body>
+<div class="box1"></div>
+<div class="box2"></div>
+<div class="box3"></div>
+</body>
+</html>

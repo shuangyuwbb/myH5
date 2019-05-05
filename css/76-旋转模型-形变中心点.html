@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>-形变中心点</title>
+    <style>
+        ul{
+            width: 100px;
+            height: 100px;
+            position: relative;
+            margin: 80px auto;
+        }
+        ul li{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            right: 0;
+            left: 0;
+            list-style: none;
+            transform-origin: 0px 0px;
+        }
+        ul li:nth-child(1){
+            background-color: #5e68ff;
+            transform: rotate(25deg);
+        }
+        ul li:nth-child(2){
+            background-color: #51ff40;
+            transform: rotate(70deg);
+        }
+        ul li:nth-child(3){
+            background-color: #ffbd47;
+            transform: rotate(135deg);
+        }
+        ul li:nth-child(4){
+            background-color: #ff32cd;
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<!--
+默认情况下，他是以自己中心旋转的
+我们可以设置中心点
+ transform-origin: 0px 0px;
+ 可以有三种取值  像素 / right left center /百分比
+-->
+<body>
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+<hr>
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+</body>
+</html>

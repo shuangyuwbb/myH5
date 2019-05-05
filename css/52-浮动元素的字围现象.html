@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>52-浮动元素的字围现象</title>
+    <style>
+        div{
+            margin:10px ;
+            width: 300px;
+            height: 300px;
+        }
+    img{
+            width: 100px;
+            background-color: red;
+            float: left;
+        }
+        p{
+            width: 300px;
+            height: 300px;
+            background-color: #2f0eff;
+        }
+    </style>
+</head>
+<!--
+浮动元素不会盖住不浮动元素的字
+在开发中，水平布局用浮动流；垂直布局用标准流
+
+-->
+<body>
+
+<div><img src="../images/zly.jpg" alt="">
+    <p>
+        赵丽颖，1987年10月16日出生于河北省廊坊市，中国内地影视女演员、歌手。2006年，因获得雅虎搜星比赛冯小刚组冠军而进入演艺圈；同年，在冯小刚执导的广告片《跪族篇》中担任女主角。2011年，因在古装剧《新还珠格格》中饰演晴儿一角而被观众认识。2013年，凭借古装剧《陆贞传奇》获得更多关注。2014年10月，在第10届金鹰电视艺术节举办的投票活动中被选为“金鹰女神”；12月，凭借都市爱情剧《杉杉
+        ... >>></p></div>
+</body>
+</html>

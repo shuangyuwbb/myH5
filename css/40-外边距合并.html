@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>40-外边距合并</title>
+    <style>
+        span{
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            border: 1px solid #000;
+        }
+        .box1{
+            margin-right: 30px;
+        }
+        .box2{
+            margin-left: 30px;
+        }
+        div{
+            height: 50px;
+            border: 1px solid #000;
+        }
+        .box4{
+            margin-bottom: 50px;
+        }
+        .box5{
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<!--
+1、默认情况下水平方向外边距是不会合并的
+2、默认情况下垂直放下，外边距是由合并现象的,那个大就听谁的
+-->
+<body>
+<span class="box1">我是盒子</span><span class="box2">我是盒子</span><span class="box3">我是盒子</span>
+<div class="box4">我是div</div>
+<div class="box5">我是div</div>
+</body>
+</html>

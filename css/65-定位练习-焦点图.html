@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>65-定位练习-焦点图</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            margin: 0 auto;
+            margin-top: 150px;
+            width: 300px;
+            height: 150px;
+            background-color: #37ff2b;
+            position: relative;
+        }
+        div img{
+            width: 300px;
+        }
+        div span{
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background-color: rgba(0 0 0 0.3 );
+            font-size: 40px;
+            line-height: 50px;
+            text-align: center;
+            position: absolute;
+        }
+        .leftbox{
+            left: 0px;
+            top: 58px;
+        }
+        .rightbox{
+            right: 0px;
+            top: 58px;
+        }
+        div ol{
+            width: 205px;
+            height: 20px;
+            background-color: rgba(0 0 0 0.9);
+            position: absolute;
+            bottom: -8px;
+            right: 6px;
+
+        }
+        div ol li{
+            list-style: none;
+            float:left;
+            width: 40px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <img src="../images/taobao.png" alt="">
+    <span class="leftbox">&lt;</span>
+    <span class="rightbox">&gt;</span>
+    <ol>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ol>
+</div>
+
+</body>
+</html>

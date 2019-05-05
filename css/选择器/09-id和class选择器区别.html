@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>09-id和class选择器区别</title>
+    <style>
+        .colorR{
+            color: #74ff23;
+        }
+        .sizeR{
+            font-size: 30px;
+        }
+        .style{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<!--
+1、id选择器不能重复，类选择器可以重复
+2、id选择器前面加#；类选择器前面加.
+3、id选择器只能有一个id，类选择器可以有多个类名
+4、在开发中一定要注重代码冗余
+-->
+<body>
+<p class="colorR style">我是文本</p>
+<p class="sizeR colorR">我是文本</p>
+<p class="style sizeR">我是文本</p>
+</body>
+</html>

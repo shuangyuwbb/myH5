@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>54-清除浮动的方法</title>
+    <style>
+        .para1{
+            background-color: #ff1b08;
+        }
+        .para2{
+            background-color: #1622ff;
+            clear: left;
+        }
+        p{
+            /*float: left;*/
+            color: #22ff04;
+        }
+    </style>
+</head>
+<!--
+清除浮动的方法：clear: 其取值 left right bath none
+注意：
+用了clear属性后，margin属性就会失效
+-->
+<body>
+<div class="para1">
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+</div>
+<div class="para2">
+    <p>我脑子二</p>
+    <p>我脑子二</p>
+    <p>我脑子二</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>important</title>
+    <style>
+        div{
+            color: #ff16ba;
+        }
+        li{
+            color: #0afff5;
+        }
+       #identity{
+           color: #ff050f;
+       }
+        .para {
+            color: #000 ;
+        }
+        *{
+            color: #fffc07!important;
+        }
+    </style>
+</head>
+<!--
+1、important是提升某个选择器在选择中的优先级的
+2、只能用于直接选中，不能用于间接选中
+3、通配符选择器也是直接选中
+4、！important只是提升被选中的属性
+5、！important只能写在属性分号之前
+-->
+<body>
+<div>
+    <ul>
+        <li>
+            <p id="identity"class="para">我是段落</p>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

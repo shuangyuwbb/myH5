@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>24-权重</title>
+    <style>
+        #identity.para{
+            color: #ff0816;
+        }
+        div ul li p{
+            color: #0f33ff;
+        }
+        div>ul>li>p{
+            color: #44ff19;
+        }
+        p{
+            color: #000000 ;
+        }
+    </style>
+</head>
+<!--
+1、先看id选择器多的优先级最高
+2、再看类选择器
+3、标签
+4、如果前面的都一样了，此时谁写下后面听谁的
+注意：只有直接选中的选择器才需要计算权重
+
+-->
+<body>
+<div>
+    <ul>
+        <li>
+            <p id="identity"class="para">我是段落</p>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

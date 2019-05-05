@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>z-inder属性</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<!--
+1、每个元素都有一个z-inder属性
+2、那个元素的z-inder属性值高谁就会显示在最上面
+3、如果他的父类也设置了z-inder属性则他的儿子这个属性就会失效，谁的父类属性值高就谁显示在最上面
+-->
+<body>
+<div class="box1"></div>
+<div class="box2"></div>
+<div class="box3"></div>
+</body>
+</html>

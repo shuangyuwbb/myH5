@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>43-盒子模型练习</title>
+    <style>
+        .content{
+            width: 500px;
+            height: 500px;
+            background-color: #ff2118;
+            border: 6px solid #000;
+        }
+        .para {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            /*margin: 150px auto;*/
+            /*margin-top: 150px;*/
+            /*margin-left: 150px;*/
+            margin:150px 150px;
+        }
+    </style>
+</head>
+<!--
+1、如果是两个盒子嵌套，设置一个里面的一个盒子外边距，外面的盒子也会被挤下来，这时只需给外面的盒子设置边框即可，
+2、在开发是，如果要控制嵌套盒子之间的距离，首先应该考虑padding，其次考虑margin，因为margin主要是设置盒子之间的缝隙的
+3、 /*margin: 150px auto;*/
+            /*margin-top: 150px;*/
+            /*margin-left: 150px;*/
+             margin:150px 150px;
+-->
+<body>
+<div class="content">
+    <div class="para"></div>
+</div>
+</body>
+</html>

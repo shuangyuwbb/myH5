@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>82-动画模块</title>
+<!--
+动画模块三要素
+1、要完成动画的对象
+2、需要完成什么动画
+3、动画所持续的时间
+-->
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: indianred;
+            /*1、索要执行动画的对象*/
+            animation-name: bb;
+            /*3、完成东画所需时间*/
+            animation-duration: 5s;
+        }
+
+        /*2、需要完成的动画*/
+        @keyframes bb {
+            form{
+                margin-left: 0;
+            }
+            to{
+                margin-left: 500px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>

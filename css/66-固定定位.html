@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>66-固定定位</title>
+    <style>
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: #25ff15;
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: #1f30ff;
+            position: fixed;
+        }
+        .box3{
+            width: 100px;
+            height: 10000px;
+            /*图片不随滚动条滚动*/
+            background-image: url(../images/上翻.png);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-color: #ffec1d;
+        }
+        img{
+            width: 100px;
+            height: 100px;
+            background-color: #05ffff;
+            position: absolute;
+            right: 0;
+
+        }
+    </style>
+</head>
+<!--
+66-固定定位 不随着滚动条的滚动而滚动
+1、固定定位是脱离标准流的，不会占用标准流中的位置
+2、固定流不区分行内元素/块级元素/行内块级元素
+3、图片不随滚动条滚动设置他的关联方试
+-->
+<body>
+<div class="box1"></div>
+<div class="box2"></div>
+<div class="box3"> <img src=" alt=""></div>
+<div class="box4">
+
+</div>
+</body>
+</html>

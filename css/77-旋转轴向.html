@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>77-旋转轴向</title>
+<!--
+默认情况下，都是绕z轴旋转的
+-->
+    <style>
+        ul{
+            width: 100px;
+            height: 100px;
+            margin: 80px auto;
+            /*透视属性  近大远小  其中取值时表示人站在何处观看
+            透视属性一定要添加给他的上级元素,建议父元素
+            */
+            perspective: 500px;
+
+        }
+        ul li{
+            width: 100px;
+            height: 100px;
+            list-style: none;
+            margin-top: 20px;
+            border: 1px solid #000;
+    }
+        ul li:nth-child(1){
+            transform: rotateZ(45deg);
+        }
+        ul li:nth-child(2){
+            transform: rotateX(45deg);
+        }
+        ul li:nth-child(3){
+            transform: rotateY(45deg);
+        }
+        ul li img{
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+    </head>
+<body>
+<ul>
+    <li><img src="../images/horse.png" alt=""></li>
+    <li><img src="../images/horse.png" alt=""></li>
+    <li><img src="../images/horse.png" alt=""></li>
+</ul>
+</body>
+</html>

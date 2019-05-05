@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>后代选择器</title>
+    <style>
+        div p{
+            color: #07ffdf;
+        }
+        /*id选择器*/
+        #ee #pp{
+            text-decoration:underline;
+        }
+        /*类选择器*/
+        .para1 .para2{
+            font-style: italic;
+        }
+    /* id和类选择器结合使用*/
+        div ul li p {
+            color: red;
+      }
+    </style>
+</head>
+<!--
+后代选择器：
+格式：
+标签1 标签2{
+}
+标签后面加一个空格就表示后面的是这个标签的后代标签
+-->
+<body>
+<p>我是文本本</p>
+<div id="ee"class="para1">
+    <p>我是文本本</p>
+    <p class="para2">我是文本本</p>
+    <ul>
+        <li>
+            <p id="pp">我是文本本</p>
+        </li>
+        <li><p id="pp1">我是文本本</p></li>
+    </ul>
+</div>
+<p>我是文本本</p>
+</body>
+</html>

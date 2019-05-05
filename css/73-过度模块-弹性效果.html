@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3-过度模块-弹性效</title>
+    <style>
+        div{
+            height: 100px;
+            background-color: #ff1315;
+            text-align: center;
+            margin-top: 100px;
+        }
+        div span{
+            font-size: 50px;
+            line-height: 100px;
+            transition: all 3s;
+        }
+        div:hover span{
+            margin: 0 50px;
+        }
+    </style>
+</head>
+<body>
+<!--
+1、你要先管过度，先布局基本页面
+2、修改我们认为应该修改的属性
+3、再回过头来，给修改属性的那个元素添加过度
+-->
+<div>
+    <span>斌</span>
+    <span>哥</span>
+    <span>带</span>
+    <span>你</span>
+    <span>学</span>
+    <span>H</span>
+    <span>5</span>
+</div>
+</body>
+</html>

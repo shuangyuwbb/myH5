@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>子元素选择器</title>
+    <style>
+        div>p{
+            color: red;
+        }
+        #wbb>p{
+            font-size: 30px;
+        }
+        div>ul>li>p{
+            font-family:"Times New Roman";
+            font-style: italic;
+        }
+    </style>
+</head>
+<!--
+子元素选择器：1、先选择标签1 在其下选择子类标签选择器2
+2、只会选择子类标签，不会选择其他嵌套的标签
+3、子元素选择器之间用>连接中间不能有空格
+4、子元素选择器中还可以用其他选择器: #wbb>p
+5、子元素选择器可以用>一直延续下去：div>ul>li>p
+格式：标签1>标签2{
+}
+
+-->
+<body>
+<p>我是文本本呢</p>
+
+<div id="wbb">
+    <p>我是文本本呢</p>
+    <p>我是文本本呢</p>
+    <ul>
+        <li>
+            <p>我是文本本呢</p>
+
+        </li><p>我是文本本呢</p>
+    </ul>
+</div>
+</body>
+</html>

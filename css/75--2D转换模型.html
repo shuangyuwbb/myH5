@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>75--2D转换模型</title>
+    <style>
+        ul{
+            width: 800px;
+            height: 400px;
+            border: 1px solid #000;
+            margin: 20px auto;
+        }
+        ul li{
+            list-style: none;
+            width: 100px;
+
+            background-color: #3c64ff;
+            text-align: center;
+            margin: 50px auto;
+        }
+        ul li:nth-child(4){
+            transform: rotate(45deg);
+        }
+        ul li:nth-child(3){
+            transform: scale(1.5,1.5);
+        }
+        ul li:nth-child(2){
+            transform: translate(100px,0px);
+        }
+        ul li:nth-child(5){
+            transform: translate(100px,0px) scale(1.5,1.5) rotate(45deg);
+        }
+    </style>
+</head>
+<!--
+平移
+缩放 transform: scale(1.5 1.5);
+旋转 transform: rotate(45deg);
+综合
+-->
+<body>
+<ul>
+    <li>正常的</li>
+    <li>平移的</li>
+    <li>缩放的</li>
+    <li>旋转的</li>
+    <li>综合的</li>
+</ul>
+</body>
+</html>

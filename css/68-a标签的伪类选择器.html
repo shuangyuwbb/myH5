@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>a标签的伪类选择器</title>
+    <style>
+        a{
+            font-size: 40px;
+            width: 30px;
+            height: 30px;
+        }
+        a:link{
+            color: #ff2814;
+        }
+        a:visited{
+
+        }
+        a:active{
+
+        }
+        a:hover{
+
+        }
+    </style>
+</head>
+<!--
+a标签存在一定状态
+1、默认状态下没有被访问
+2、被访问状态
+3、鼠标长安
+4、鼠标悬停
+a标签的伪类选择器是专门用来设置a标签不同状态下的样式的
+:link 修改没放过的样式
+:visited 修改访问过样式
+:hover 鼠标悬停时样式
+:active 修改鼠标长安是的样式
+-->
+<body>
+<a href="javascript:">bb </a>
+<hr>
+<a href="http://www.baidu.com">wy</a>
+</body>
+</html>

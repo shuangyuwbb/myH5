@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>70-过度模块基本使用</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: #ff1315;
+            /*告诉需要渐变的属性及其速度*/
+            transition-property: width,background-color;
+            /*告诉这个变化持续多长时间*/
+            transition-duration: 5s,5s;
+        }
+        div:hover{
+            width: 500px;
+            background-color: #24ff0b;
+        }
+    /*为选择器除了在a标签上使用还可以在其他的标签上使用*/
+    /*    多个属性需要过度是，用逗号隔开
+    transition-property: width,background-color;
+    transition-duration: 5s,5s;
+    */
+    </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>

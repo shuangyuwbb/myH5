@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>57-清除浮动5</title>
+    <style>
+        div{
+            background-color: #ff190c;
+        }
+        p{
+            float: left;
+        }
+       .box1::after{
+            /*添加元素为空*/
+            content: '';
+            /*高度为0*/
+            height: 0;
+            /*隐藏添加内容*/
+            visibility: hidden;
+           /*为子元素设置  clear: both;*/
+            clear: both;
+           /*将子元素设置为块级元素*/
+           display: block;
+        }
+    </style>
+</head>
+<body>
+<div class="box1"><p>我是为你在</p><p>我是为你在</p><p>我是为你在</p></div>
+<div><p>我是为你在</p><p>我是为你在</p><p>我是为你在</p></div>
+</body>
+</html>

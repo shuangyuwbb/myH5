@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文字阴影和盒子阴影</title>
+<!--
+  1、box-shadow: h-shadow v-shadow blur spread color inset;
+  2、box-shadow:水平偏移 垂直偏移 透明度 阴影扩展 阴影颜色 内外阴影
+  3、水平，和垂直阴影时必须的，其他可选
+  4、可写： box-shadow:水平 垂直 透明度
+
+  5、文字阴影： text-shadow:水平 垂直 透明度 阴影颜色
+  6、默认情况下，阴影颜色适合中间文字颜色一致
+-->
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: #49ffeb;
+            margin: 30px auto;
+            text-align: center;
+            line-height: 100px;
+        }
+        .box1{
+            box-shadow:10px 10px 10px  ;
+        }
+        .box2{
+            text-shadow:5px 5px 2px ;
+        }
+    </style>
+</head>
+<body>
+<div class="box1">我是盒子</div>
+<div class="box2">我是文字</div>
+</body>
+</html>

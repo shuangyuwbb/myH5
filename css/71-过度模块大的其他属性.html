@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>71-过度模块大的其他属性</title>
+<!--    过度模块的三要素
+1、有过渡元素
+2、有过度属性
+3、过度速度，也就是过度所持续的时间
+ transition-timing-function:; 设置过度的不同速度有五个取值
+ 分别是linear ease ease-in ease-out ease-in-out
+ transition-delay 延迟属性，
+-->
+    <style>
+        *{
+            margin: 0; padding: 0;
+        }
+        div{
+            width: 700px;
+            height: 500px;
+            background-color: #49ff35;
+            border: 1px solid #000;
+            margin: 0 auto;
+        }
+        div ul li{
+            width: 100px;
+            height: 50px;
+            background-color: #ff3f0c;
+            margin-top: 50px;
+            list-style: none;
+            transition-property: margin-left;
+            transition-duration: 10s;
+        }
+        ul:hover li{
+            margin-left: 700px;
+        }
+        ul li:nth-last-child(5){
+            transition-timing-function:linear;
+        }
+        ul li:nth-last-child(1){
+            transition-timing-function:ease;
+        }
+        ul li:nth-last-child(2){
+            transition-timing-function:ease-in;
+        }
+        ul li:nth-last-child(3){
+            transition-timing-function:ease-out;
+        }
+        ul li:nth-last-child(4){
+            transition-timing-function:ease-in-out;
+        }
+        .bb{
+            width: 100px;
+            height: 100px;
+            background-color: #6f4dff;
+            transition-delay: 2s;
+            transition-duration: 3s;
+        }
+        .bb:hover{
+            width: 400px;
+        }
+             </style>
+</head>
+<body>
+
+<div>
+    <ul>
+        <li>linear</li>
+        <li>ease</li>
+        <li>ease-in</li>
+        <li>ease-out</li>
+        <li>ease-in-out</li>
+    </ul>
+    <hr>
+    <div class="bb"></div>
+</div>
+</body>
+</html>

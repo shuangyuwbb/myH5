@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>48-标准流和浮动流</title>
+    <style>
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: #ff1b08;
+            display: inline-block;
+            float: left;
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: #101fff;
+            display: inline-block;
+            float: right;
+        }
+    </style>
+</head>
+<!--
+网页布局方式：标准流 （文档流，普通流）有两种排版方式：垂直排版和水平排班
+浮动流 只有一种排版方式，只能左对齐或右对齐。
+float:right;表示box2将来和父元素的右边对其
+float:left 将来和其父元素的左边对齐
+注意：
+1、在浮动流中没有水平居中center取值。
+2、在浮动流中margin ：0 auto；无效
+特点：
+1、在浮动流中，不区分行内元素/块级元素/行内块级元素，都可以显示在同一行
+2、在浮动流中，行内元素也可以设置宽高
+-->
+<body>
+<div class="box1"></div>
+<div class="box2"></div>
+</body>
+</html>

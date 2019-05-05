@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>56-伪元素选择器</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: #46ff0f;
+            border: 6px solid #000;
+        }
+        div::before{
+            content: "爱你";
+            height: 40px;
+            width: 40px;
+            background-color: #fff;
+            display: block;
+        }
+        div::before{
+            content: "爱你";
+        }
+    </style>
+</head>
+<!--
+56-伪元素选择器:
+给制定标签的前面或者让后面添加一个子元素
+ visibility: hidden; /*隐藏所加内容*/
+  div::before{
+            content: "爱你";
+        }
+  div::before{
+            content: "爱你";
+        }
+-->
+<body>
+<div>
+    我是文字
+</div>
+</body>
+</html>

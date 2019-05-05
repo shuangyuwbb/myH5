@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>58-清除浮动6</title>
+    <style>
+        div{
+            background-color: #ff0a09;
+            overflow: hidden;
+            *zoom: 1;
+        }
+        p{
+            float: left;
+        }
+    </style>
+</head>
+<-- *zoom: 1;兼容问题在IE6终须加上这个属性
+    overflow: hidden;的作用
+1.清除浮动
+2.可以将超出标签范围的内容剪切掉
+3.可以通过overflow: hidden;给里面的盒子设置margin-top时外面的盒子不会被顶下来
+
+-->
+<body>
+<div>
+    <p>我是文字</p>
+    <p>我是文字</p>
+    <p>我是文字</p>
+</div>
+<div>
+    <p>我是大大</p>
+    <p>我是大大</p>
+    <p>我是大大</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>72-过度模块连写</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: #5cff4a;
+            /*transition-property:width,height,background-color  ;*/
+            /*transition-duration: 5s,3s,4s;*/
+            transition: all 5s;
+        }
+        div:hover{
+            width: 5px;
+            height: 500px;
+            background-color: #ff171d;
+        }
+    </style>
+<!--
+连写一  transition-property:width,height,background-color  ;*/
+            /*transition-duration: 5s,3s,4s;
+连写二  transition: all 5s;
+-->
+</head>
+<body>
+<div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>55-清楚浮动方法二</title>
+    <style>
+        div{
+            background-color: #151cff;
+        }
+        .para1{
+            background-color: #ff090e;
+        }
+        .para2{
+            background-color: #0fff0e;
+            margin-top: 10px;
+        }
+        .para3{
+            clear: both;
+            background-color: #0b0b0b;
+            height: 20px;
+        }
+        p{
+            float: left;
+            background-color: #ff0a09;
+        }
+    </style>
+</head>
+<!--55-清楚浮动方法二
+隔墙法：
+1、外墙发
+在两个盒子中间加一个块级元素，并且给他设置clear属性
+注意：
+外墙发不是第一个盒子使用margin-bottom属性
+外墙发可以第二个盒子使用margin-top属性
+2、内墙发
+是在第一个盒子的所有子元素最后加上一个块级元素，并给他设置clear属性
+注意
+外墙发可以第一个盒子使用margin-top属性
+外墙发可以第二个盒子使用margin-bottom属性
+内墙发可以撑起第一个盒子的高度，外墙发则不能
+-->
+<body>
+<div class="para1">
+    <p>文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <div class="para3"></div>
+</div>
+<!--<div class="para3 h2"></div>-->
+<div class="para2">
+    <p>文字二</p>
+    <p>文字二</p>
+    <p>文字二</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>39-外边距</title>
+    <style>
+        span{
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            border: 1px solid #000;
+            /*margin: 10px 20px 30px 40px;*/
+            margin-top:10px ;
+            margin-right: 20px;
+            margin-bottom: 30px;
+            margin-left: 40px;
+        }
+        div{
+            height: 100px;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<!--
+1、缩写  margin: 10px 20px 30px 40px;上 右 下 左
+2、分别设置
+margin-top:10px ;
+margin-right: 20px;
+margin-bottom: 30px;
+margin-left: 40px;
+注意 内边距是没有背景颜色的
+-->
+<body>
+<span class="box1">我是span</span><span class="box2">我是span</span><span class="box3">我是span</span>
+<div class="box4"></div>
+</body>
+</html>

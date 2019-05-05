@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>69-a标签伪类选择器练习</title>
+<!--
+1、在开发中伪类选择器卸载标签选择器后面
+2、在开发中，和a标签盒子有关的属性都写在标签选择器中
+3、和a标签背景文字相关的属行写在伪选择器中
+-->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            width: 800px;
+            height: 50px;
+            background-color: #139f32;
+            top: 50px;
+            margin: 100px auto;
+        }
+        ul li{
+            float: right;
+            width: 100px;
+            line-height: 50px;
+            list-style: none;
+            text-align: center;
+        }
+        ul li a{
+            text-decoration: none;
+            width: 100px;
+            height: 50px;
+            display: inline-block;
+        }
+        a:link{
+            color: #ff1213;
+        }
+        a:visited{
+            color: #e23bff;
+        }
+        a:hover{
+            color: #2bff0a;
+            background-color: #ccc;
+        }
+        a:active{
+            color: #2623ff;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li><a href="#">我是导航条</a></li>
+    <li><a href="#">我是导航条</a></li>
+    <li><a href="#">我是导航条</a></li>
+    <li><a href="#">我是导航条</a></li>
+    <li><a href="#">我是导航条</a></li>
+    <li><a href="#">我是导航条</a></li>
+    <li><a href="#">我是导航条</a></li>
+    <li><a href="#">我是导航条</a></li>
+</ul>
+</body>
+</html>
